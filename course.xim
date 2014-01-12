@@ -1,5 +1,6 @@
 ---
-name: Two Parter
+name: A Course in Two Parts
+description: This is a sample course which involves two separate units, called, rather uncreatively, Unit 1 and Unit 2.  Each of the units includes two activities.
 ---
 
 unit1
