@@ -17,7 +17,10 @@
   Here is the matrix.
 
 \begin{matrixanswer}[name=M]
-  console.log('running javascript');    
+  function validator(m) {
+    console.log( "validating ", m );
+    return m[0][0].v == '17';
+  }
 \end{matrixanswer}
 
 After the matrix answer.
