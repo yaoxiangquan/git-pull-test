@@ -36,8 +36,19 @@ Try a linear function.
 \end{hint}
 An example is $f(x) = $ \begin{expression-answer}
   function validator(f) {
-    console.log( "validating ", f );
-    return 1;
+    if (f.variables().indexOf('x') == -1) {
+      feedback( 'You should include an $x$ in your answer.' );
+    }
+
+    if (f.variables().length > 1) {
+      feedback( 'The only variable you should use is $x$.' );
+    }
+
+    if (abs(f.evaluate( {x:2} ) - 4.0) < 0.0001)
+      return 1;
+
+    feedback( 'Check what happens when you plug in $x=2$.' );
+    return 0;
   }
 \end{expression-answer}.
 \end{solution}
