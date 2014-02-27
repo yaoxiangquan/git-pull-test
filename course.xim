@@ -8,6 +8,9 @@ unit1
   unit1/final
 unit2
   unit2/basics
+    unit2/basics/subbasic1
+    unit2/basics/subbasic2
+    unit2/basics/subbasic3
   unit2/final
 unit3
 unit4
